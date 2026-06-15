@@ -77,6 +77,7 @@ const RootLayout = ({
     <html
       lang="en"
       className={`${bebasNeue.variable} ${montserrat.variable} h-full`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-sans bg-brand-bg text-brand-navy antialiased">
         <script
