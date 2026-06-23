@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const slides = [
     {
-        image: 'https://picsum.photos/seed/healthcare1/1920/1080',
+        image: '/hero_checkup.png',
         headline: 'When Was the Last Time Your Practice Had a Checkup?',
         text: 'We specialize in practice management, revenue cycle optimization, and private practice business support throughout the U.S.',
         primaryCta: 'Get Free Practice Analysis',
@@ -16,7 +16,7 @@ const slides = [
         secondaryLink: '#video'
     },
     {
-        image: 'https://picsum.photos/seed/billing1/1920/1080',
+        image: '/hero_billing.png',
         headline: 'Focus on Patients, Not Paperwork',
         text: 'Get paid fast, access reports in real-time 24/7, and free your staff to focus on delivering exceptional clinical care.',
         primaryCta: 'Our Solutions',
@@ -25,7 +25,7 @@ const slides = [
         secondaryLink: '/contact'
     },
     {
-        image: 'https://picsum.photos/seed/exec1/1920/1080',
+        image: '/hero_consulting.png',
         headline: 'Recover Lost Profit, Reduce Collection Costs',
         text: 'Reclaim the profit that is rightfully yours while preserving customer goodwill with QuickCollect.',
         primaryCta: 'Reclaim Profit',
@@ -60,10 +60,10 @@ const HeroSlider = () => {
                     className="absolute inset-0"
                 >
                     <div
-                        className="absolute inset-0 bg-cover bg-center opacity-40"
+                        className="absolute inset-0 bg-cover bg-center opacity-65"
                         style={{ backgroundImage: `url(${slides[current].image})` }}
                     />
-                    <div className="absolute inset-0 bg-brand-navy/85" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/85 to-brand-navy/40" />
                 </motion.div>
             </AnimatePresence>
 

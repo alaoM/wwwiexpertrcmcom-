@@ -17,7 +17,7 @@ const About = () => {
                     >
                         <div className="aspect-[4/3] rounded-[4px] overflow-hidden relative border border-brand-light">
                             <img
-                                src="https://picsum.photos/seed/healthcare2/800/600"
+                                src="/hero_billing.png"
                                 alt="Healthcare operations"
                                 className="object-cover w-full h-full"
                             />

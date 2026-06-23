@@ -25,7 +25,7 @@ const ExplainerVideo = () => {
                     >
                         <div className="aspect-video bg-gray-900 rounded-[4px] overflow-hidden relative group cursor-pointer border border-brand-steel">
                             <img
-                                src="https://picsum.photos/seed/video/1280/720"
+                                src="/hero_checkup.png"
                                 alt="Video Placeholder"
                                 className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-300"
                             />
