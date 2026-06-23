@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'motion/react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Target, ShieldCheck, Users, Activity, Coins, Cpu, MessageSquare, Award, Heart,
   Building2, Stethoscope, Microchip, Network, Cross, ChevronDown, ChevronLeft, ChevronRight
@@ -279,10 +280,13 @@ const AboutClient = () => {
                 Integrity RCM LLC is a certified medical revenue manager accredited by the Medical Revenue Management Association of America.
               </p>
               <div className="bg-white/5 p-4 rounded border border-white/10 flex items-center justify-center">
-                <img
+                <Image
                   src="/mrmaa.png"
                   alt="MRMAA Accreditation Logo"
+                  width={160}
+                  height={80}
                   className="h-20 w-auto opacity-95"
+                  style={{ width: 'auto' }}
                 />
               </div>
               <div className="border-t border-white/10 pt-6 space-y-4">

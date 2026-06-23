@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'motion/react';
 import { Play, CheckCircle2 } from 'lucide-react';
+import Image from 'next/image';
 
 const benefits = [
     'Improved cash flow and accelerated revenue',
@@ -24,10 +25,12 @@ const ExplainerVideo = () => {
                         className="relative"
                     >
                         <div className="aspect-video bg-gray-900 rounded-[4px] overflow-hidden relative group cursor-pointer border border-brand-steel">
-                            <img
+                            <Image
                                 src="/hero_checkup.png"
                                 alt="Video Placeholder"
-                                className="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-300"
+                                fill
+                                className="object-cover opacity-80 group-hover:opacity-60 transition-opacity duration-300"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 flex items-center justify-center">
                                 <div className="w-[60px] h-[60px] bg-brand-orange text-white flex items-center justify-center rounded-[4px] group-hover:bg-[#a63d18] transition-colors duration-300">

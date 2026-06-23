@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from 'motion/react';
 import Link from 'next/link';
 import { 
@@ -170,16 +170,13 @@ const ServicesClient = () => {
   // ROI Calculator states
   const [billings, setBillings] = useState<number>(150000);
   const [specialtyType, setSpecialtyType] = useState<string>('Specialty Practice');
-  const [estimatedAnnualSavings, setEstimatedAnnualSavings] = useState<number>(21600);
 
-  useEffect(() => {
-    // Determine multiplication rate based on type: Hospital = 14%, Specialty = 12%, Primary Care = 10%
-    let rate = 0.12;
-    if (specialtyType === 'Hospitals') rate = 0.14;
-    else if (specialtyType === 'Primary Care') rate = 0.10;
-    
-    setEstimatedAnnualSavings(Math.round(billings * rate * 12));
-  }, [billings, specialtyType]);
+  // Determine multiplication rate based on type: Hospital = 14%, Specialty = 12%, Primary Care = 10%
+  let rate = 0.12;
+  if (specialtyType === 'Hospitals') rate = 0.14;
+  else if (specialtyType === 'Primary Care') rate = 0.10;
+  
+  const estimatedAnnualSavings = Math.round(billings * rate * 12);
 
   const filteredServices = servicesData.filter(svc => {
     const matchesCategory = activeCategory === 'All' || getCategoryForService(svc.slug) === activeCategory;

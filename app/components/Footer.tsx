@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -9,13 +10,23 @@ const Footer = () => {
                     {/* Left Widget: Logos */}
                     <div className="space-y-6">
                         <Link href="/">
-                            <img src="/logo.png" alt="Integrity RCM LLC Logo" className="h-8 md:h-10 w-auto object-contain cursor-pointer" />
+                            <Image 
+                                src="/logo.png" 
+                                alt="Integrity RCM LLC Logo" 
+                                width={200} 
+                                height={40} 
+                                className="h-8 md:h-10 w-auto object-contain cursor-pointer" 
+                                style={{ width: 'auto' }} 
+                            />
                         </Link>
                         <div className="pt-2">
-                            <img 
+                            <Image 
                                 src="/mrmaa.png" 
                                 alt="MRMAA Accredited" 
+                                width={112}
+                                height={56}
                                 className="h-14 w-auto opacity-85 hover:opacity-100 transition-opacity bg-brand-light/20 p-2 rounded-[4px]"
+                                style={{ width: 'auto' }} 
                             />
                         </div>
                     </div>

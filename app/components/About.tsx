@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'motion/react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const About = () => {
@@ -16,10 +17,12 @@ const About = () => {
                         className="relative"
                     >
                         <div className="aspect-[4/3] rounded-[4px] overflow-hidden relative border border-brand-light">
-                            <img
+                            <Image
                                 src="/hero_billing.png"
                                 alt="Healthcare operations"
-                                className="object-cover w-full h-full"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 bg-brand-navy/5"></div>
                         </div>

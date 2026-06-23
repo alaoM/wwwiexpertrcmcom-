@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { servicesData } from '../data/servicesData';
 
@@ -43,7 +44,14 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/">
-                            <img src="/logo.png" alt="Integrity RCM LLC Logo" className="h-8 md:h-10 w-auto object-contain" />
+                            <Image 
+                                src="/logo.png" 
+                                alt="Integrity RCM LLC Logo" 
+                                width={200} 
+                                height={40} 
+                                className="h-8 md:h-10 w-auto object-contain" 
+                                style={{ width: 'auto' }} 
+                            />
                         </Link>
                     </div>
 
