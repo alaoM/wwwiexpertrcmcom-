@@ -11,34 +11,39 @@ import {
 
 const industriesWithSpecialties = [
   {
-    name: 'Hospitals',
-    icon: Building2,
-    specialties: ['Anesthesiology', 'Surgery', 'Cardiology', 'Neurology', 'Orthopedics', 'Pain Management', 'Multi-specialists']
-  },
-  {
-    name: 'Clinics',
+    name: "Primary Care",
     icon: Stethoscope,
-    specialties: ['Family Practice', 'Internal Medicine', 'Primary Care', 'Dermatology', 'Nurse Practitioner', 'Mental Behavior Health']
+    specialties: ["Family Practice", "Internal Medicine", "Primary Care", "Nurse Practitioner"]
   },
   {
-    name: 'Physician Groups',
-    icon: Users,
-    specialties: ['Family Practice', 'Primary Care', 'Internal Medicine', 'Nurse Practitioner', 'Start up practices', 'Multi-specialists']
+    name: "Medical Specialties",
+    icon: Activity,
+    specialties: ["Cardiology", "Nephrology", "Neurology", "Dermatology"]
   },
   {
-    name: 'Specialty Practices',
-    icon: Microchip,
-    specialties: ['Cardiology', 'Nephrology', 'Neurology', 'Ob/Gyn', 'Dermatology', 'Orthopedics', 'Pain Management', 'Surgery', 'Mental Behavior Health', 'Reproductive Medicine', 'Anesthesiology']
-  },
-  {
-    name: 'Healthcare Networks',
-    icon: Network,
-    specialties: ['Multi-specialists', 'Primary Care', 'Family Practice', 'Internal Medicine', 'Cardiology', 'Neurology']
-  },
-  {
-    name: 'Ambulatory Centers',
+    name: "Surgical Specialties",
     icon: Cross,
-    specialties: ['Surgery', 'Pain Management', 'Anesthesiology', 'Orthopedics']
+    specialties: ["Orthopedics", "Surgery", "Ob/Gyn"]
+  },
+  {
+    name: "Women’s Health",
+    icon: Heart,
+    specialties: ["Ob/Gyn", "Reproductive Medicine"]
+  },
+  {
+    name: "Pain Management",
+    icon: ShieldCheck,
+    specialties: ["Pain Management"]
+  },
+  {
+    name: "Behavioral Health",
+    icon: MessageSquare,
+    specialties: ["Behavioral Health"]
+  },
+  {
+    name: "Operational / Business",
+    icon: Building2,
+    specialties: ["Start-Up Practices"]
   }
 ];
 
@@ -316,10 +321,10 @@ const AboutClient = () => {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-brand-orange font-bold uppercase tracking-widest text-xs">Expertise Areas</span>
             <h2 className="font-bebas text-5xl md:text-6xl mb-4 tracking-wide">
-              INDUSTRIES WE SERVE
+              SPECIALTIES WE SERVE
             </h2>
             <p className="text-brand-light text-base max-w-2xl mx-auto">
-              Select an industry below to dynamically explore our specialized RCM and medical billing service specialties.
+              Select a specialty category below to dynamically explore our specialized RCM and medical billing service specialties.
             </p>
           </div>
 

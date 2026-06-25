@@ -11,10 +11,6 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "What is Revenue Cycle Management (RCM) in healthcare?",
-    answer: "Revenue Cycle Management (RCM) is the comprehensive healthcare financial process that tracks patient care episodes from registration and appointment scheduling to the final payment of a balance. At Integrity RCM LLC, we utilize certified electronic solutions to manage insurance eligibility verification, claim submissions, denial resolution, and patient billing, ensuring independent practices maximize reimbursements and reduce days in Accounts Receivable (A/R)."
-  },
-  {
     question: "How does outsourcing medical billing improve private practice cash flow?",
     answer: "Outsourcing your billing to a certified partner like Integrity RCM LLC reduces administrative overhead, eliminates the need for expensive software licenses, and secures faster reimbursements. Our CodeRite claim scrubbing and AuditGuard services minimize claim denial rates, achieving a first-pass resolution rate of up to 98% and increasing collections by up to 15% to 30% on average."
   },
@@ -25,6 +21,14 @@ const faqData: FAQItem[] = [
   {
     question: "Is Integrity RCM LLC fully compliant with HIPAA and security regulations?",
     answer: "Yes, all of our electronic billing and practice management tools—including iClaim, ChoicePay, and EMRx—are fully HIPAA, HITECH, and Meaningful Use certified. Through our CompliancyGuard service, we maintain a 100% HIPAA audit guarantee and deploy end-to-end encryption to safeguard patient personal health information (PHI) and protect your practice from audit risks."
+  },
+  {
+    question: "WE ALREADY HAVE AN ELECTRONIC HEALTH RECORD (EHR) SYSTEM IN PLACE. ARE WE REQUIRED TO ADOPT YOUR ICLAIM OR EMRX SOLUTIONS IN ORDER TO BECOME A CLIENT?",
+    answer: "No, adopting our iClaim or EMRx solutions is not a requirement to partner with us. Our primary objective is to optimize your revenue cycle and maximize reimbursement, and we are fully equipped to work within your existing EHR system to achieve those goals. While we do offer iClaim and EMRx as additional solutions—and strongly recommend them for their efficiency and performance benefits—they are entirely optional and can be implemented based on your organization’s needs and preferences."
+  },
+  {
+    question: "WHAT IS THE DIFFERENCE BETWEEN MEDICAL BILLING AND RCM?",
+    answer: "Medical billing is a component of RCM, focusing on claim submission and payment collection, whereas RCM covers the entire financial lifecycle, including front office tasks (such as eligibility and authorization), service coding and documentation, billing, claim processing, denial management and collections"
   }
 ];
 
