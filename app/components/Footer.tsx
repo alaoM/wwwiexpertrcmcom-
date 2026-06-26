@@ -10,23 +10,23 @@ const Footer = () => {
                     {/* Left Widget: Logos */}
                     <div className="space-y-6">
                         <Link href="/">
-                            <Image 
-                                src="/logo.png" 
-                                alt="Integrity RCM LLC Logo" 
-                                width={200} 
-                                height={40} 
-                                className="h-8 md:h-10 w-auto object-contain cursor-pointer" 
-                                style={{ width: 'auto' }} 
+                            <Image
+                                src="/logo.png"
+                                alt="Integrity RCM LLC Logo"
+                                width={400}
+                                height={250}
+                                className="h-24 md:h-32 w-auto object-contain cursor-pointer"
+                                style={{ width: 'auto' }}
                             />
                         </Link>
                         <div className="pt-2">
-                            <Image 
-                                src="/mrmaa.png" 
-                                alt="MRMAA Accredited" 
+                            <Image
+                                src="/mrmaa.png"
+                                alt="MRMAA Accredited"
                                 width={112}
                                 height={56}
                                 className="h-14 w-auto opacity-85 hover:opacity-100 transition-opacity bg-brand-light/20 p-2 rounded-[4px]"
-                                style={{ width: 'auto' }} 
+                                style={{ width: 'auto' }}
                             />
                         </div>
                     </div>

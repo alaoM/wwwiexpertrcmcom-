@@ -44,13 +44,14 @@ const Navbar = () => {
                 <div className="flex justify-between items-center">
                     <div className="flex-shrink-0 flex items-center">
                         <Link href="/">
-                            <Image 
-                                src="/logo.png" 
-                                alt="Integrity RCM LLC Logo" 
-                                width={200} 
-                                height={40} 
-                                className="h-8 md:h-10 w-auto object-contain" 
-                                style={{ width: 'auto' }} 
+                            <Image
+                                src="/logo.png"
+                                alt="Integrity RCM LLC Logo"
+                                width={400}
+                                height={250}
+                                className="h-24 md:h-32 w-auto object-contain"
+                                style={{ width: 'auto' }}
+                                priority
                             />
                         </Link>
                     </div>
